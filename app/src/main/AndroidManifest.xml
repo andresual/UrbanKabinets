@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.andresual.dev.urbankabinet">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/UrbanKabinet">
+        <activity android:name=".Activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".Activity.MainActivity"
+            android:label="Welcome" />
+        <activity
+            android:name=".Activity.SignInActivity"
+            android:label="Sign In" />
+        <activity
+            android:name=".Activity.SignUpActivity"
+            android:label="Sign Up" />
+        <activity android:name=".Activity.BottomNavigationActivity" />
+        <activity android:name=".Activity.VerifyAccountActivity" />
+        <activity android:name=".Activity.RootActivity" />
+        <activity android:name=".Activity.HotItemDetails" />
+        <activity
+            android:name=".Activity.ProductDetailActivity"
+            android:label="Product Details"
+            android:theme="@style/UrbanKabinet.NoActionBar"></activity>
+        <activity android:name=".Activity.CustomProductActivity"></activity>
+    </application>
+
+</manifest>

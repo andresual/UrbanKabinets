@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background3x"
+    tools:context="com.andresual.dev.urbankabinet.Activity.SignUpActivity">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="329dp"
+        android:background="@drawable/rounded_frame"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="32dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:paddingLeft="16dp"
+
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:id="@+id/relativeLayout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/tv_label_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All fields are required"
+            android:textColor="#ffffff"/>
+
+        <EditText
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_et"
+            android:drawableLeft="@drawable/ic_action_name"
+            android:drawablePadding="8dp"
+            android:layout_below="@id/tv_label_1"
+            android:id="@+id/et_name_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:textColor="@color/font_hint"
+            android:textColorHint="@color/font_hint" />
+
+        <EditText
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:drawableLeft="@drawable/ic_action_email"
+            android:drawablePadding="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/et_name_sign_up"
+            android:id="@+id/et_email_sign_up"
+            android:textColor="@color/font_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email Address"
+            android:background="@drawable/rounded_et"
+            android:textColorHint="@color/font_hint"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:drawableLeft="@drawable/ic_action_phone"
+            android:drawablePadding="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/et_email_sign_up"
+            android:id="@+id/et_phone_number_sign_up"
+            android:textColor="@color/font_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:background="@drawable/rounded_et"
+            android:textColorHint="@color/font_hint"
+            android:inputType="phone"/>
+
+        <EditText
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@drawable/ic_action_password"
+            android:drawablePadding="8dp"
+            android:layout_below="@+id/et_phone_number_sign_up"
+            android:id="@+id/et_password_sign_up"
+            android:layout_width="match_parent"
+            android:background="@drawable/rounded_et"
+            android:textColor="@color/font_hint"
+            android:textColorHint="@color/font_hint"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"/>
+
+        <EditText
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@drawable/ic_action_password"
+            android:drawablePadding="8dp"
+            android:layout_below="@+id/et_password_sign_up"
+            android:id="@+id/et_retype_password_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/font_hint"
+            android:hint="Retype Password"
+            android:background="@drawable/rounded_et"
+            android:textColorHint="@color/font_hint"
+            android:inputType="textPassword" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_tos"
+        android:layout_width="0dp"
+        android:layout_height="33dp"
+        android:textColor="@color/colorPrimary"
+        android:text="By Signing up, I agree to Urban Cabinet's Term of Services"
+        app:layout_constraintLeft_toLeftOf="@+id/relativeLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/relativeLayout"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginRight="8dp"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <Button
+        android:id="@+id/btn_sign_up"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:background="@drawable/rounded_button"
+        android:text="sign up"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_tos"
+        app:layout_constraintRight_toRightOf="@+id/tv_tos"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tos"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>
